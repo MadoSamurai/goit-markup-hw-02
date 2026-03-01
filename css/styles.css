@@ -2,7 +2,8 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #2e2f42;
   letter-spacing: 0.02em;
-  line-height: 150%;
+  line-height: 1.5;
+  background-color: #fff;
 }
 ul {
   list-style-type: none;
@@ -19,7 +20,7 @@ p {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -30,16 +31,22 @@ p {
   font-weight: 500;
 }
 .nav-link:hover,
-.address-link:hover {
+.address-link:hover,
+.address-link:active,
+.address-link:focus {
   color: #404bbf;
 }
 .nav-link:active,
 .nav-link:focus {
   text-decoration: underline;
+  color: #404bbf;
 }
 .address-list {
   font-size: 16px;
   color: #434455;
+}
+.address-link {
+  font-style: normal;
 }
 .hello-section {
   background-color: #2e2f42;
@@ -47,7 +54,7 @@ p {
 .hello-section-title {
   font-weight: 700;
   font-size: 56px;
-  line-height: 107%;
+  line-height: 1.07;
   color: #ffffff;
   text-align: center;
 }
@@ -61,10 +68,15 @@ p {
   letter-spacing: 0.04em;
   cursor: pointer;
 }
+.hello-section-btn:hover,
+.hello-section-btn:focus {
+  background-color: #404bbf;
+}
+
 .features-list-title {
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
 }
 .team {
   background-color: #f4f4fd;
@@ -74,7 +86,7 @@ p {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
-  line-height: 111%;
+  line-height: 1.11;
 }
 .team-card {
   background-color: #fff;
@@ -84,7 +96,7 @@ p {
   text-align: center;
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
 }
 .team-card-descr,
 .portfolio-card-descr {
@@ -101,5 +113,5 @@ p {
 }
 .portfolio-card-title,
 .portfolio-card-descr {
-  text-align-last: left;
+  text-align: left;
 }
